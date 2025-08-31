@@ -1,0 +1,106 @@
+.style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #e670ce;
+  
+    }
+    .gameArea {
+    background: url('') no-repeat center/cover;
+}
+
+
+.namling {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('') no-repeat center/contain;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+  .panic {
+    transform: scale(1.2);
+    animation: shake 0.4s;
+    }
+
+   
+
+  /* UI Buttons */
+  #uiButtons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+
+  button {
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  /* Overlay menus */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 91, 140, 0.8);
+    color: #ff4378;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    overflow-y: auto;
+  }
+
+  .overlay h2 {
+    margin-bottom: 20px;
+  }
+
+  .overlay button {
+    margin: 5px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 10px;
+  }
+
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #namcoinsDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 100;
+  }
+  #uiButtons img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#namcoinsDisplay img {
+  width: 40px;
+  height: 40px;
+}
+.fighting {
+  animation: shake 0.2s infinite alternate;
+}
+
+@keyframes shake {
+  from { transform: translate(0,0) rotate(-10deg); }
+  to { transform: translate(5px, -5px) rotate(10deg); }
+}
